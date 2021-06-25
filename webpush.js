@@ -3,8 +3,8 @@ const webpush = require('web-push');
 // VAPID keys should only be generated only once.
 const vapidKeys = {
   publicKey:
-    'BLVBhcG12DDHvKck3rAvVjjIYoJnpFxKf9Ueo7ICd7YXhV8VBbdoqEySURZ0C2AJ3ZAPUhK5cmPUn3PesEFFr5w',
-  privateKey: 'MGALZ9xhxZh54kjgJRkQfvl16QtEm8emPPAy_6-C9gA'
+    'BPz68ZbsMCBLPLXILMIUBAJ_n9N_U60BhxeT_b539I2U2BGN_TdZrt8EFAEGnbJpAXfh9rTjOIawmAZtWKMM5qw',
+  privateKey: 'Y45y1ctP6oUKlr_2DhP8jDphlgUlx0fmd1tdbqU-v5U'
 };
 
 webpush.setVapidDetails(
@@ -15,10 +15,10 @@ webpush.setVapidDetails(
 
 // This is the same output of calling JSON.stringify on a PushSubscription
 const pushSubscription = {
-  endpoint: '.....',
+    endpoint: '.....',
   keys: {
     auth: '.....',
-    p256dh: '.....'
+    p256dh: ''
   }
 };
 
